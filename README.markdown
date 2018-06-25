@@ -6,6 +6,25 @@
 
 ### With contributions from individuals (thanks!)
 
+#### Special note 0
+
+This fork can be used with the `stack` build tool by following these instructions:
+
+``` sh
+$ git clone https://github.com/NICTA/course/
+$ cd course
+$ stack init
+$ stack build course:lib
+```
+
+Finally jump in to GHCi with:
+
+``` sh
+$ stack ghci course --no-build --no-load
+```
+
+Credit to [/u/jlimperg](https://www.reddit.com/r/haskellquestions/comments/4pafh9/nicta_course_with_stack/d4jrnrj/).
+
 #### Special note 1
 
 If you have arrived here by https://github.com/data61/fp-course and you are
@@ -14,7 +33,7 @@ looking for the *answers* (not the exercises), please go to https://github.com/t
 #### Special note 2
 
 As of February 2017, this repository is taking the place of the repository hosted at
-https://github.com/NICTA/course which is deprecated. 
+https://github.com/NICTA/course which is deprecated.
 
 Data61 replaces what was NICTA since July 2016. The new repository is located at
 https://github.com/data61/fp-course.
@@ -161,8 +180,6 @@ available in this repository for your convenience.
    Using tab characters in Haskell can lead to confusing error messages.
    GHC will give you a warning if your program contains a tab character.
 
-6. Do not use the stack build tool. It does not work.
-
 ### Running the tests
 
 Tests are available as a [tasty](https://hackage.haskell.org/package/tasty)
@@ -239,13 +256,13 @@ After this, the following progression of modules is recommended:
 * `Course.Applicative`
 * `Course.Monad`
 * `Course.FileIO`
-* `Course.State`
-* `Course.StateT`
-* `Course.Extend`
-* `Course.Comonad`
+* `Course.State` (pending)
+* `Course.StateT` (pending)
+* `Course.Extend` (pending)
+* `Course.Comonad` (pending)
 * `Course.Compose`
 * `Course.Traversable`
-* `Course.ListZipper`
+* `Course.ListZipper` (incomplete)
 * `Course.Parser` *(see also `Course.Person` for the parsing rules)*
 * `Course.MoreParser`
 * `Course.JsonParser`
